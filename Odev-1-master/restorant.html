@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<style>
+		* {
+		    box-sizing: border-box;
+		}
+		.row {
+		    width: 100%;
+		}
+		[class*="col-"] {
+		    float: left;
+		    padding: 15px;
+		}
+		body{
+			background-color: darkgrey;
+		}
+		h1{
+			text-align: center;
+			font-size: 40px;
+			color: orange;
+			padding: 30px;
+			background-color: black;
+			margin-bottom: 15px;
+		}
+		#beef{
+			border: 5px solid orange;
+			padding: 50px;
+			background: url(beef2.jpg);
+			background-repeat: no-repeat;
+		}
+
+		#chicken{
+			border: 5px solid orange;
+			padding: 50px;
+			background: url(chicken2.jpg);
+			background-repeat: no-repeat;
+		}
+
+		#sushi{
+			border: 5px solid orange;
+			padding: 50px;
+			background: url(sush.jpg);
+			background-repeat: no-repeat;
+		}
+		
+		p {
+		text-shadow: 3px 2px powderblue;	
+	    padding: 15px;
+	    margin-bottom: 8px;
+	    margin-right: auto;
+	    margin-left: auto;
+	    background-color: black;
+	    color: orange;
+	    word-spacing: 15px;
+	    height: 150px;
+	    width: 90%;
+		}
+
+		
+		[class*="col-"] { /*Mobile Phone-oncelik bu sekle verildi sonrasında min piksel sayıları belirtilerek desktop ve tablete uyarlandı.*/
+    	width: 100%;
+    }
+
+		@media (min-width: 992px){ /*Desktop(Large)*/
+			.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    				float: left;
+  			}
+
+			.col-1 {
+				width: 8.33%;
+			}
+		    .col-2 {
+		    	width: 16.66%;
+		    }
+		    .col-3 {
+		    	width: 25%;
+		    }
+		    .col-4 {
+		    	width: 33.33%;
+		    }
+		    .col-5 {
+		    	width: 41.66%;
+		    }
+		    .col-6 {
+		    	width: 50%;
+		    }
+		    .col-7 {
+		    	width: 58.33%;
+		    }
+		    .col-8 {
+		    	width: 66.66%;
+		    }
+		    .col-9 {
+		    	width: 75%;
+		    }
+		    .col-10 {
+		    	width: 83.33%;
+		    }
+		    .col-11 {
+		    	width: 91.66%;
+		    }
+		    .col-12 {
+		    	width: 100%;
+		    }
+
+		}
+		
+		@media (max-width: 991px) and (min-width: 768px){ /*Tablet(Medium)*/
+			.col-m-1, .col-m-2, .col-m-3, .col-m-4, .col-m-5, .col-m-6, .col-m-7, .col-m-8, .col-m-9, .col-m-10, .col-m-11, .col-m-12{
+				float: left;
+			}
+			.col-m-1{
+				width: 8.33%;
+			}
+		    .col-m-2 {
+		    	width: 16.66%;
+		    }
+		    .col-m-3 {
+		    	width: 25%;
+		    }
+		    .col-m-4 {
+		    	width: 33.33%;
+		    }
+		    .col-m-5 {
+		    	width: 41.66%;
+		    }
+		    .col-m-6 {
+		    	width: 50%;
+		    }
+		    .col-m-7 {
+		    	width: 58.33%;
+		    }
+		    .col-m-8 {
+		    	width: 66.66%;
+		    }
+		    .col-m-9 {
+		    	width: 75%;
+		    }
+		    .col-m-10 {
+		    	width: 83.33%;
+		    }
+		    .col-m-11 {
+		    	width: 91.66%;
+		    }
+		    .col-m-12 {
+		    	width: 100%;
+		    }
+
+		} 
+	</style>
+	<title>Restaurant</title>
+</head>
+<body>
+
+	<h1>MENU</h1>
+
+<div class="row">     <!--Satırın iki section tarafından paylaşılması için mediumlar 6, satırın 3 section tarafından paylaşılması için largelar 4 olarak ayarlandı.-->
+	<div class="col-4 col-m-6">
+		<div id="beef">
+			<h2><strong>BEEF</strong></h2>
+		</div>
+	</div>
+	<div class="col-4 col-m-6">
+		<div id="chicken">
+			<h3><strong>CHICKEN</strong></h3>
+		</div>
+	</div>  
+</div>
+	<div class="row">
+	  <div class="col-4 col-m-12">  <!--Medium cihazlarda bir sectionın alt satırda tüm satırı kaplaması için 12 olarak ayarlandı.-->
+	  	<div id="sushi">
+	  		<h4><strong>SUSHI</strong></h4>
+	  	</div>
+	  </div>
+	</div>
+	
+	
+
+</body>
+</html>
