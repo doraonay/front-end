@@ -1,0 +1,91 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: #404040;
+  font-family: 'Oxygen', sans-serif;
+}
+
+#header-nav {
+  background-color: #ff0000;
+  border-radius: 0;
+  border: 0;
+}
+
+/* anchor'a gidildiğinde navigation bar yazı içeriğini kapatıyordu, gidilen
+yemeğin başlığının görüntülenebilmesi için yapıldı*/
+#beef, #chicken, #sushi {
+    margin-top: -200px;
+    padding-top: 200px;
+}
+
+#top { 
+    margin-top: -250px;
+    padding-top: 250px;
+}
+
+
+.navbar-brand h1 {
+	color: #ffffff;
+	font-family: 'Lora', serif;
+  font-size: 2em;
+	text-transform: uppercase;
+  font-weight: bold;
+	text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+	margin-bottom: 0;
+ 	line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 2px solid #ffffff;
+}
+
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+  font-size: 1.4em;
+}
+
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+/*overflow-y ile y ekseninde scroll yapılması sağlandı*/
+#chicken-tile, #beef-tile, #sushi-tile {
+  height: 750px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow-y: auto;
+}
+
+/*navigation bar'ın her zaman üstte olması sağlandı*/
+header {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+div h2 {
+	text-align: center;
+	margin-bottom: 17px;
+}
+
+.boxHeader h2 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+section {
+	height: 1000px;
+	background-color: #800000;
+}
