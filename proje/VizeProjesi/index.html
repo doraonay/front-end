@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>project</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<header>
+		<nav id="header-nav" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="index.html" class="pull-left visible-md visible-lg">
+						<div id="logo-img"></div>
+					</a>
+
+					<div class="navbar-brand">
+						<a href="index.html">
+							<h1>EGE UNIVERSITESI <br> BILGISAYAR MUHENDISLIGI <br> BOLUMU </h1>
+						</a>
+					</div>
+
+					<button id="navbarToggle" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+				</div>
+
+				<div id="collapsable-nav" class="collapse navbar-collapse">
+		           <ul id="nav-list" class="nav navbar-nav navbar-right">
+		            <li>
+		              <a href="http://bilmuh.ege.edu.tr/tr/genel-bilgiler">
+		                <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> Hakkimizda</a>
+		            </li>
+		            <li>
+		              <a href="#" onclick="$dc.loadPersonelCategories();">
+		                <span class="glyphicon glyphicon-user" ></span><br class="hidden-xs"> Personel</a>
+		            </li>
+		            <li>
+		              <a href="#" onclick="$dc.loadMenuCategories();">
+		                <span class="glyphicon glyphicon-book"></span><br class="hidden-xs"> Egitim</a>
+		            </li>
+		          </ul><!-- #nav-list -->
+		        </div><!-- .collapse .navbar-collapse -->
+			</div>
+		</nav>
+	</header>
+
+
+	<div id="main-content" class="container">
+		
+	</div>
+
+	
+	<div id="home-tiles" class="row">
+		  <div class="col-md-4 col-sm-6 col-xs-12">
+			<a href="#" onclick="$dc.loadMenuCategories();"><div id="egitim-tile"><span>egitim</span></div></a>
+		  </div>
+
+		  <div class="col-md-4 col-sm-6 col-xs-12">
+			<a href="#" onclick="$dc.loadPersonelCategories();"><div id="personel-tile"><span>personel</span></div></a>
+		  </div>
+
+		  <div class="col-md-4 col-sm-12 col-xs-12">
+			<a href="https://www.google.com.tr/maps/place/Ege+University+Computer+Engineering+Department/@38.4581062,27.2134078,15z/data=!4m12!1m6!3m5!1s0x0:0x5fcc67a77466c8f3!2sEge+University+Computer+Engineering+Department!8m2!3d38.4579885!4d27.213404!3m4!1s0x0:0x5fcc67a77466c8f3!8m2!3d38.4579885!4d27.213404" target="_blank">
+			  <div id="map-tile">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12497.118339425417!2d27.21340775808681!3d38.458106212856705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5fcc67a77466c8f3!2sEge+University+Computer+Engineering+Department!5e0!3m2!1sen!2str!4v1509320123380" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<span>harıta</span>
+			  </div>
+			</a>
+		  </div>
+		</div>
+
+
+	<footer class="panel-footer">
+	    <div class="container">
+	      <div class="row">
+	        <section id="yararlı linkler" class="col-sm-3">
+	          <span>YARARLI LİNKLER:</span><br> <br>
+	          <ul><li><a href="http://www.ege.edu.tr" title="Ege Üniversitesi" target="_blank"><span class = "glyphicon glyphicon-globe"></span><br class = "hidden-xs"></a></li>
+				<li><a href="http://posta.ege.edu.tr" title="Ege Posta (Eski)" target="_blank"><span class="glyphicon glyphicon-envelope"></span></a></li>
+				<li><a href="http://postayeni.ege.edu.tr" title="Ege Posta (Yeni)" target="_blank"><span class="glyphicon glyphicon-envelope"></span></span></a></li>
+				<li><a href="http://egetel.ege.edu.tr" title="Ege Tel" target="_blank"><span class="glyphicon glyphicon-phone-alt"></span></a></li>
+				<li><a href="http://www.egeduyuru.ege.edu.tr" title="Ege Duyuru" target="_blank"><span class="glyphicon glyphicon-comment"></span></a></li>
+				<li><a href="http://www.ege.edu.tr/tr-121/Mezun.html" title="Mezunlar" target="_blank"><span class="glyphicon glyphicon-user"></span></a></li>
+				<li><a href="http://egeweb.ege.edu.tr/harita/" title="Harita" target="_blank"><span class="glyphicon glyphicon-map-marker"></span></a></li>
+			</ul>
+	          <hr class="visible-xs">
+	        </section>
+
+	        <section id="adres" class="col-sm-3">
+	          <span>ADRES</span><br> <br>
+	          Ege Üniversitesi<br><br>
+	          Mühendislik Fakültesi<br>
+	          Bilgisayar Mühendisliği Bölümü<br><br>
+	          Kazımdirik Mahallesi,<br>
+	          Bornova Metro İstasyonu Karşısı,<br>
+	          35100 Bornova / İZMİR
+	          <hr class="visible-xs">
+	        </section>
+
+	        <section id="iletişim" class="col-sm-3">
+	        	<span>İLETİŞİM</span><br><br>
+				Telefon<br>+90 232 388 72 21<br><br>
+				Faks<br>+90 232 339 94 05 <br><br>
+				E-Posta<br style="margin-bottom: 10px;"> <a href="bilmuh@mail.ege.edu.tr" style="color: red; font-size: 20px;"><strong> bilmuh@mail.ege.edu.tr</strong></a><br>
+	        </section>
+
+	        <section id = "sosyal medya" class="col-sm-3">
+	        	<span>SOSYAL MEDYA</span><br><br>
+
+	        <div>
+	        	<a href="#">
+	        		<img src="images/connections.png" width="40" height="40">
+	        	</a>
+	        	<ul>
+	        		<li><a href="http://twitter.com/UniversiteEge" title="Visit Universite Ege on Twitter" target="_blank"<img src="images/twitter_icon.png" alt="Twitter icon" width="25" height="25"></a></li>
+	        	</ul>
+	        </div>
+
+
+
+	        	 <div id="twitter-profile-button" class="responsive"><a href="http://twitter.com/UniversiteEge" title="Visit Universite Ege on Twitter" target="_blank"><img src="images/twitter_icon.png" alt="Twitter icon" width="25" height="25"></a></div>
+
+	        	 <div id="facebook-profile-button"><a href="http://www.facebook.com/eucompeng" title="Visit eu compeng on Facebook" target="_blank"><img src="images/facebook.png" alt="Facebook icon" width="25" height="25"></a></div>
+
+	        	 <div id="flickr-profile-button"><a href="http://www.flickr.com/photos/egeuniversitesi" title="Visit egeuniversitesi on Flickr" target="_blank"><img src="images/flicker.png" alt="Flickr icon" width="25" height="25"></a></div>
+
+	        	 <div id="googleplus-profile-button"><a href="http://plus.google.com/+egeuniversitesi" title="Visit egeuniversitesi on Google+" target="_blank"><img src="images/google_plus.png" alt="Google+ icon" width="25" height="25"></a></div>
+
+	        	 <div id="instagram-profile-button"><a href="http://instagram.com/universiteege" title="Visit universiteege on Instagram" target="_blank"><img src="images/instagram.png" alt="Instagram icon" width="25" height="25"></a></div>
+
+	        	 <div id="linkedin-profile-button"><a href="http://www.linkedin.com/in/eucompeng" title="Visit eucompeng on LinkedIn" target="_blank"><img src="images/linkedin.png" alt="LinkedIn icon" width="25" height="25"></a></div>
+
+	        	 <div id="pinterest-profile-button"><a href="http://pinterest.com/universiteege" title="Visit universiteege on Pinterest" target="_blank"><img src="images/pinterest.png" alt="Pinterest icon" width="25" height="25"></a></div>
+
+	        	 <div id="youtube-profile-button"><a href="http://www.youtube.com/c/egeuniversitesi" title="Visit egeuniversitesi on YouTube" target="_blank"><img src="images/youtube.png" alt="YouTube icon" width="25" height="25"></a></div>
+
+	        </section>
+	      </div>
+	      
+	  </footer>
+
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+ 	<script src="js/bootstrap.min.js"></script>
+ 	<script src="js/ajax-utils.js"></script>
+  	<script src="js/script.js"></script>
+ 
+</body>
+</html>

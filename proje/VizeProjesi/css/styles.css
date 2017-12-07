@@ -1,0 +1,356 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: grey;
+  font-family: 'Oxygen', sans-serif;
+}
+
+div a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    display:inline-block;
+}
+
+  ul{
+    display: inline;
+    margin: 0;
+    padding: 0;
+  }
+  ul li {display: inline-block;}
+ul li:hover {background: #555;}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+ul li ul li { 
+  background: #555; 
+  display: block; 
+}
+ul li ul li a {display:block;} 
+ul li ul li:hover {background: #666;}
+
+
+li {
+  margin-bottom: 5px;
+}
+
+#egitim-categories-title + div {
+  margin-bottom: 50px;
+}
+
+/** HEADER **/
+#header-nav {
+  background-color: #0080ff;
+  border-radius: 0;
+  border: 0;
+}
+
+#logo-img {
+  background: url('logo.png') no-repeat;
+  width: 150px;
+  height: 150px;
+  margin: 10px 15px 10px 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+}
+
+.navbar-brand h1 {
+  font-family: 'Lora', serif;
+  color: blue;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+#phone {
+  margin-top: 5px;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 2px solid #000000;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -10px;
+}
+/* END HEADER */
+
+.panel-footer {
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top: 0;
+}
+.panel-footer div.row {
+  margin-bottom: 35px;
+}
+
+/* HOME PAGE */
+.container .jumbotron {
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+}
+
+#personel-tile, #egitim-tile, #map-tile {
+  height: 250px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+
+
+div#personel-tile, div#egitim-tile, div#map-tile {
+  height: 250px;
+  width: 360px;
+  margin-bottom: 15px;
+  margin-left: 50px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  text-align: center;
+}
+
+#personel-tile:hover, #egitim-tile:hover, #map-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#personel-tile {
+  background: url('personel.jpg') no-repeat;
+  background-position: center;
+}
+#egitim-tile {
+  background: url('egitim.jpg') no-repeat;
+  background-position: center;
+}
+
+#personel-tile span, #egitim-tile span, #map-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.6em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+
+/* MENU CATEGORIES PAGE */
+.egitimler-tile, .semesters-tile, .personeller-tile { 
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+  width: 350px;
+  height: 350px;
+  margin: 0 auto 15px;
+}
+.egitimler-tile span, .semesters-tile span, .personeller-tile span {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  opacity: .8;
+}
+.egitimler-tile:hover, .semesters-tile:hover {
+  box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#egitim-categories-title, #semester-categories-title, #personel-categories-title  {
+  margin-bottom: 50px;
+}
+
+/* SINGLE CATEGORY PAGE */
+.personel-icerik-tile {
+  margin-bottom: 25px;
+}
+.personel-icerik-tile hr {
+  width: 80%;
+}
+.personel-icerik-tile {
+  font-size: 1.1em;
+  text-align: right;
+  margin-top: -15px;
+  margin-right: -15px;
+}
+.personel-icerik-tile span {
+  font-size: .6em;
+}
+
+.personel-icerik-foto {
+  position: relative;
+  border: 2px solid #3F0C1F; 
+  overflow: hidden;
+  padding: 0;
+  margin-right: -15px;
+  margin-left: auto;
+  margin-bottom: 20px;
+  max-width: 130px;
+}
+.personel-icerik-foto div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80px;
+  background-color: #557c3e;
+  text-align: center;
+}
+
+h2#personel-icerik-title {
+  margin-bottom: 30px;
+}
+
+h3.personel-icerik-title {
+  margin: 0 0 10px;
+  text-align: left;
+}
+
+p.personel-icerik-details {
+  text-align: left;
+}
+
+#personel-icerik-foto {
+  width: 130px;
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('logo-med.png') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  /* End Header */
+
+  /* Home Page */
+  .container .jumbotron {
+    background: url('bilmuh992.jpg') no-repeat;
+    height: 330px;
+  }
+  /* End Home Page */
+}
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .container .jumbotron {
+    background: url('bilmuh1200.jpg') no-repeat;
+    height: 330px;
+  }
+}
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  .container .jumbotron {
+    background: url('bilmuh768.jpg') no-repeat;
+    height: 330px;
+  }
+  /* End Home Page */
+
+}
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+  .navbar-brand p { /* Kosher cert */
+    font-size: .6em;
+    margin-top: 12px;
+  }
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  /* Home Page */
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+  #personel-tile, #egitim-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+
+  .personel-icerik-foto {
+    margin-right: auto;
+  }
+
+  .personel-icerik-description {
+    text-align: center;;
+  }
+}
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+  
+  /* Home page */
+  #personel-tile, #egitim-tile {
+    width: 280px;
+    margin: 0 auto 15px;
+  }
+
+  .semesters-tile, .personeller-tile, .egitimler-tile {
+    width: 250px;
+    height: 250px;
+  }
+
+  .col-xxs-12 {
+    width: 100%;
+  }
+
+
+}
