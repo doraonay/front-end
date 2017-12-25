@@ -1,0 +1,33 @@
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    background: #2980b9 url(
+        "http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png"
+    ) repeat 0 0;
+	-webkit-animation: 100s linear 0s normal none infinite animate;
+	-moz-animation: 100s linear 0s normal none infinite animate;
+	-ms-animation: 100s linear 0s normal none infinite animate;
+	-o-animation: 100s linear 0s normal none infinite animate;
+	animation: 100s linear 0s normal none infinite animate;
+}
+
+input, button {
+    border: none;
+}
+
+#root {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+}
